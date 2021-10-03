@@ -148,14 +148,8 @@ html.has-scroll-dragging {
     width: 90%;
     margin: 0 auto;
   }
-  main #swip .swiper .swiper-wrapper .swiper-slide .col {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 90rem;
-            flex: 1 1 90rem;
-  }
   main #swip .swiper .swiper-wrapper .swiper-slide .col .image {
     width: 90vw;
-    min-width: 100%;
   }
   main #swip .swiper .swiper-wrapper .swiper-slide .col .image img {
     height: 60vh;
@@ -174,8 +168,13 @@ html.has-scroll-dragging {
   main #portfolio .headline h1 {
     font-size: 5rem;
   }
-  main #portfolio .container .col {
+  main #portfolio .container .col, main #portfolio .container .col-2 {
     margin-bottom: 5rem;
+    margin: 0 auto;
+    width: 90%;
+  }
+  main #portfolio .container .col .img a img, main #portfolio .container .col-2 .img a img {
+    min-width: 90vw !important;
   }
   main #portfolio .container .col-2 {
     margin-left: 0 !important;
