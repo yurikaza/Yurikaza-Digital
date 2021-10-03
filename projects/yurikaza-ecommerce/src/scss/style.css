@@ -1,0 +1,550 @@
+@import url(//db.onlinewebfonts.com/c/480e3d39ed40d6543721946a2d36ccff?family=RZ);
+.outer-container {
+  max-width: 600px;
+  margin: auto;
+  width: 90%;
+  padding: 200px 0px;
+  position: relative;
+}
+
+.image-container {
+  padding-bottom: 100%;
+  background: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  padding-left: 10rem;
+  width: 40vw;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 64px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 0;
+  white-space: nowrap;
+}
+
+.section-title.on-dark {
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;
+  font-size: 10rem;
+  left: -70rem;
+}
+
+.section-title.on-light {
+  color: white;
+  z-index: 0;
+  font-size: 10rem;
+  left: -70rem;
+}
+
+.section-title span {
+  position: relative;
+  display: block;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+header nav .left h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+header nav .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .right ul {
+  display: inline;
+}
+
+header nav .right ul li {
+  list-style: none;
+}
+
+header nav .right ul li a {
+  text-decoration: none;
+  font-weight: 100;
+  color: #fff;
+}
+
+header #hero .container {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+header #hero .container .text p {
+  width: 50%;
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+
+header #hero .container .headline h1 {
+  font-size: 2rem;
+}
+
+.cursor {
+  position: absolute;
+  background-size: cover;
+  width: 450px;
+  height: 250px;
+  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  -webkit-transform: translate(50px, 0px);
+          transform: translate(50px, 0px);
+}
+
+.cursor-follow1 {
+  background: url("/projects/yurikaza-ecommerce/src/img/Rectangle 19.png") no-repeat 100% 100%;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.cursor-follow2 {
+  background: url("/projects/yurikaza-ecommerce/src/img/louis-vuitton-zebra-bust-t-shirt-dress--FLRO32IU2517_PM2_Front view.png") no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+}
+
+.cursor-follow3 {
+  background: url("/projects/yurikaza-ecommerce/src/img/louis-vuitton-slanted-signature-cameos-and-coins-dress--FLRO31IL3900_PM1_Side view.png") no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+}
+
+.cursor-follow4 {
+  background: url("/projects/yurikaza-ecommerce/src/img/louis-vuitton-slanted-signature-bust-jacquard-dress--FLKD97IS9506_PM1_Side view.png") no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+}
+
+.cursor-follow5 {
+  background: url("/projects/yurikaza-ecommerce/src/img/louis-vuitton-lurex-stripes-skater-dress--FLRO41GG5900_PM1_Side view.png") no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+}
+
+.cursor-follow6 {
+  background: url("/projects/yurikaza-ecommerce/src/img/nikhil-uttam-NNbMVCMOEb4-unsplash.png") no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+}
+
+.line1:hover ~ .cursor-follow1 {
+  opacity: 1;
+}
+
+.line2:hover ~ .cursor-follow2 {
+  opacity: 1;
+}
+
+.line3:hover ~ .cursor-follow3 {
+  opacity: 1;
+}
+
+.line4:hover ~ .cursor-follow4 {
+  opacity: 1;
+}
+
+.line5:hover ~ .cursor-follow5 {
+  opacity: 1;
+}
+
+.line6:hover ~ .cursor-follow6 {
+  opacity: 1;
+}
+
+#home {
+  text-align: start;
+  line-height: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.headline {
+  padding-bottom: 5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.headline h1 {
+  font-size: calc(5vw + .5rem);
+  max-width: 40%;
+  font-weight: 400;
+}
+
+.line {
+  overflow: hidden;
+  padding-right: 25rem;
+  min-width: 100vw;
+}
+
+.line p a {
+  color: #000;
+  text-decoration: none;
+}
+
+.line p a:hover {
+  text-decoration: line-through;
+}
+
+.line sup {
+  position: relative;
+  font-weight: 300;
+}
+
+#home .main-text p {
+  overflow: hidden;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: "RZ";
+  src: url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.eot");
+  src: url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.woff") format("woff"), url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.svg#RZ") format("svg");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body h1, body h2, body h3, body h4, body h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+body p, body a {
+  font-family: 'Roboto', sans-serif;
+}
+
+body #arrivals .headline {
+  width: 90%;
+}
+
+body #arrivals .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+body #arrivals .container .col .content .ps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: start;
+}
+
+body #bestSeller .container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+body #bestSeller .container .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #bestSeller .container .col .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-right: 5rem;
+  border: 1px solid #000;
+  margin-bottom: 3rem;
+}
+
+body #bestSeller .container .col .product .left .img img {
+  width: 20rem;
+  padding-right: 3rem;
+}
+
+body #bestSeller .container .col .product .right .headlines h1 {
+  font-size: 2rem;
+  padding-bottom: 4rem;
+}
+
+body #bestSeller .container .col .product .right .para p {
+  font-size: 1.5rem;
+}
+
+body #bestSeller .container .col .product .right .btn a button {
+  background-color: black;
+  color: white;
+  width: 6rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+body #sub {
+  border: 1px solid #000;
+  padding: 2rem 2rem 2rem 2rem;
+  margin: 5rem 0rem 5rem 0rem;
+  border-right: none;
+  border-left: none;
+}
+
+body #sub .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #sub .container .col-1 h1 {
+  font-size: 3rem;
+  width: 80%;
+}
+
+body #sub .container .col-2 label {
+  color: #464646;
+}
+
+body #sub .container .col-2 input {
+  margin-right: 3rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+body #sub .container .col-2 button {
+  border: none;
+  color: #fff;
+  background-color: #000;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+body #partners .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 4rem;
+}
+
+body #partners .container .col-1 {
+  width: 40%;
+}
+
+body #partners .container .col-1 h1 {
+  font-size: 4rem;
+}
+
+body #partners .container .col-1 p {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+body #conntactUs {
+  background-color: #f8f8f8;
+  margin-top: 5rem;
+}
+
+body #conntactUs .container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body #conntactUs .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+body #conntactUs .top .left .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #conntactUs .top .left .inputs input {
+  height: 2rem;
+  width: 20rem;
+}
+
+body #conntactUs .top .left .inputs button {
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+body #conntactUs .top .left .inputs button img {
+  width: 2rem;
+}
+
+body #conntactUs .top .right .icons a {
+  padding-right: 1rem;
+}
+
+body #conntactUs .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+body #conntactUs .middle .left ul li, body #conntactUs .middle .right ul li {
+  list-style: none;
+}
+
+body #conntactUs .middle .left ul li a, body #conntactUs .middle .right ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+body #conntactUs .bottom {
+  text-align: center;
+}
+
+body #conntactUs .bottom h1 {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 750px) {
+  body header #hero .container {
+    display: none;
+  }
+  body main #arrivals .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main #bestSeller .container .col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main #partners .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main #partners .container .col-1 {
+    width: 100%;
+  }
+  body footer #conntactUs .container .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  body footer #conntactUs .container .top .left {
+    padding-bottom: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

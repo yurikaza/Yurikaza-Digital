@@ -1,0 +1,128 @@
+
+.cursor {
+    position: absolute;
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(50px, 0px);
+  }
+  
+  .cursor-follow1 {
+    background: url('/projects/yurikaza-ecommerce/src/img/Rectangle\ 19.png') no-repeat 100% 100%;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cursor-follow2 {
+    background: url('/projects/yurikaza-ecommerce/src/img/louis-vuitton-zebra-bust-t-shirt-dress--FLRO32IU2517_PM2_Front\ view.png') no-repeat 50% 50%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+  }
+  
+  .cursor-follow3 {
+    background: url('/projects/yurikaza-ecommerce/src/img/louis-vuitton-slanted-signature-cameos-and-coins-dress--FLRO31IL3900_PM1_Side\ view.png') no-repeat 50% 50%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+  }
+  
+  .cursor-follow4 {
+    background: url('/projects/yurikaza-ecommerce/src/img/louis-vuitton-slanted-signature-bust-jacquard-dress--FLKD97IS9506_PM1_Side\ view.png') no-repeat 50% 50%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+  }
+  
+  .cursor-follow5 {
+    background: url('/projects/yurikaza-ecommerce/src/img/louis-vuitton-lurex-stripes-skater-dress--FLRO41GG5900_PM1_Side\ view.png') no-repeat 50% 50%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+  }
+  
+  .cursor-follow6 {
+    background: url('/projects/yurikaza-ecommerce/src/img/nikhil-uttam-NNbMVCMOEb4-unsplash.png') no-repeat 50% 50%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+  }
+  
+  .line1:hover ~ .cursor-follow1 {
+    opacity: 1;
+  }
+  
+  .line2:hover ~ .cursor-follow2 {
+    opacity: 1;
+  }
+  
+  .line3:hover ~ .cursor-follow3 {
+    opacity: 1;
+  }
+  
+  .line4:hover ~ .cursor-follow4 {
+    opacity: 1;
+  }
+  
+  .line5:hover ~ .cursor-follow5 {
+    opacity: 1;
+  }
+  
+  .line6:hover ~ .cursor-follow6 {
+    opacity: 1;
+  }
+
+
+
+
+  #home {
+    text-align: start;
+    line-height: 50px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .headline {
+    padding-bottom: 5rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .headline h1 {
+    font-size: calc(5vw + .5rem);
+    max-width: 40%;
+    font-weight: 400;
+  }
+  
+  .line {
+    overflow: hidden;
+    padding-right: 25rem;
+    min-width: 100vw;
+
+    p {
+        a {
+            color: #000;
+            text-decoration: none;
+            &:hover {
+                text-decoration: line-through;
+             
+
+            }
+        }
+    }
+  }
+  
+  .line sup {
+    position: relative;
+    font-weight: 300;
+  }
+  
+  #home .main-text p {
+    overflow: hidden;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }

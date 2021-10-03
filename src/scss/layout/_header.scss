@@ -1,0 +1,106 @@
+header {
+    nav {
+        font-family: $Main-font-family;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        .left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-size: 1.5rem;
+                flex: 1;
+            }
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex: 1;
+                width: 80%;
+                li {
+                    list-style: none;
+                    width: 80%;
+                    a {
+                        padding-right: 1rem;
+                        text-decoration: none;
+                        color: $Black;
+                    }
+                }
+            }
+        }
+        .right {
+            a {
+                text-decoration: none;
+                button {
+                    border: none;
+                    background-color: $White;
+                    color: $Black;
+                    z-index: 1;
+                    position: relative;
+                    width: 8rem;
+                    height: 2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    #hero {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+            .col-1 {
+                flex: 1;
+                h1 {
+                    font-family: $Secondary-font-family;
+                    font-size: calc(1rem + 4vw);
+                    span {
+                        font-family: $Main-font-family;
+                        font-size: calc(1rem + 5vw);
+                    }
+                }
+                .buttons {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    text-align: start;
+                    a {
+                        text-decoration: none;
+                        button {
+                            border: none;
+                            background-color: $Black;
+                            color: $White;
+                            z-index: 1;
+                            position: relative;
+                            width: 8rem;
+                            height: 2rem;
+                            cursor: pointer;
+                        margin-right: 4rem;
+
+                        }
+                    }
+                    .img-btn {
+                        display: flex;
+                        img {
+                            margin-right: 2rem;
+                        }
+                    }
+                }
+            }
+            .col-2 {
+                flex: 1;
+                img {
+                    width: calc(15rem + 30vw);
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}

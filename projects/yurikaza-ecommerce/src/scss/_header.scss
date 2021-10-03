@@ -1,0 +1,52 @@
+header {
+    background-color: #000;
+    color: #fff;
+    nav {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 5rem;
+        .left {
+            h1 {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+            }
+        }
+        .right {
+            display: flex;
+            ul {
+                display: inline;
+                li {
+                   list-style: none;
+                   a {
+                       text-decoration: none;
+                       font-weight: 100;
+                       color: #fff;
+                   }
+                }
+            }
+        }
+    }
+    #hero {
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            padding-top: 3rem;
+            .text {
+                p {
+                    width: 50%;
+                    font-size: 0.8rem;
+                    line-height: 150%;
+                }
+            }
+            .headline {
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
