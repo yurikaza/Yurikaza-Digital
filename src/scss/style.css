@@ -157,6 +157,8 @@ html.has-scroll-dragging {
   main #swip .swiper .swiper-wrapper .swiper-slide .col .image img {
     height: 60vh;
     width: 90vw;
+    position: relative;
+    z-index: 10000;
   }
   main #swip .swiper .swiper-wrapper .swiper-slide .col .icons {
     display: -webkit-box;

@@ -60,6 +60,8 @@
                                 img {
                                     height: 60vh;
                                     width: 90vw;
+                                    position: relative;
+                                    z-index: 10000;
                                   }
                             }
                             .icons {
