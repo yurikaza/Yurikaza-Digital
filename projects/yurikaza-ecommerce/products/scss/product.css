@@ -94,10 +94,11 @@ body #recommends .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
+  text-align: center;
 }
 
 body #recommends .container .col img {
-  width: 30rem;
+  width: 80%;
   background-color: #f7f7f7;
   margin-bottom: 2rem;
 }

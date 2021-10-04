@@ -3,7 +3,9 @@
 @import 'category';
 @import url(//db.onlinewebfonts.com/c/480e3d39ed40d6543721946a2d36ccff?family=RZ);
 @font-face {font-family: "RZ"; src: url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.eot"); src: url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.woff") format("woff"), url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/480e3d39ed40d6543721946a2d36ccff.svg#RZ") format("svg"); }
-
+button {
+    border: none;
+}
 body {
     margin: 0;
     padding: 0;
