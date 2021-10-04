@@ -104,6 +104,9 @@ html.has-scroll-dragging {
   body {
     overflow-x: hidden;
   }
+  header nav .right {
+    display: none;
+  }
   header #hero .container {
     display: -webkit-box;
     display: -ms-flexbox;
