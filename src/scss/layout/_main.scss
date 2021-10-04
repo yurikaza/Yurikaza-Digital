@@ -432,6 +432,11 @@ div{
         h1 {
           font-family: $Main-font-family;
         }
+        a {
+          img {
+            padding-right: 1rem;
+          }
+        }
         .btn {
             display: flex;
             input {

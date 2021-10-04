@@ -864,6 +864,10 @@ footer #connactUs .bottom .left .col-2 h1 {
   font-family: "Darker Grotesque", sans-serif;
 }
 
+footer #connactUs .bottom .left .col-2 a img {
+  padding-right: 1rem;
+}
+
 footer #connactUs .bottom .left .col-2 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
