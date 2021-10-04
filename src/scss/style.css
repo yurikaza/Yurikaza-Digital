@@ -375,6 +375,10 @@ html .svg-logo {
   width: 6rem;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 #home {
   text-align: start;
   width: 80%;
