@@ -1,12 +1,16 @@
 //import LocomotiveScroll from 'locomotive-scroll';
 
+
+
+
+/*
+
+
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
 });
 
-
-/*
 
 let didScroll = false;
 let paralaxTitles = document.querySelectorAll('.paralax-title');
@@ -101,7 +105,72 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+var animRequestID,
+  settingsStr = document.getElementById("smooth-scroll").dataset.scrollSettings,
+  settings = parseSettings(settingsStr);
 
+function parseSettings(str) {
+  var r = {};
+  str.split(" ").forEach((s) => {
+    var t = s.split(":");
+    r[t[0]] = t[1];
+  });
+  return r;
+}
+
+function addListeners(element, events, callback) {
+  events
+    .split(" ")
+    .forEach((e) => element.addEventListener(e, callback, false));
+}
+
+function handleResize() {
+  var bodyHeight = document.getElementById("smooth-scroll").offsetHeight;
+  gsap.set("body", { height: bodyHeight });
+  cancelAnimationFrame(animRequestID);
+}
+
+function handleScroll() {
+  scrollTo(window.scrollY);
+}
+
+function scrollTo(y) {
+  cancelAnimationFrame(animRequestID);
+  animRequestID = requestAnimationFrame(function () {
+    gsap.to("#smooth-scroll", {
+      duration: settings.duration,
+      y: -y,
+      ease: settings.ease,
+    });
+  });
+}
+
+gsap.set("#smooth-scroll", {
+  force3D: true,
+});
+
+if (settings.smoother == "on") {
+  // gsap.set('.viewport', { perspective: 1000 });
+  gsap.set("#smooth-scroll", {
+    rotation: 0.01,
+    // z: .01
+  });
+}
+
+addListeners(window, "load resize", handleResize);
+addListeners(window, "scroll", handleScroll);
+
+const textrev = gsap.timeline();
+
+textrev.from(".line span", 1.8, {
+  y: 250,
+  ease: "power4.out",
+  delay: 1,
+  skewY: 10,
+  stagger: {
+    amount: 0.4,
+  },
+});
 
 AOS.init();
 
@@ -110,22 +179,20 @@ AOS.init();
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
+  startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: "aos-init", // class applied after initialization
+  animatedClassName: "aos-animate", // class applied on animation
   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  debounceDelay: 80, // the delay on debounce used while resizing window (advanced)
   throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 400, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
+  delay: 4, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: "ease-out", // default easing for AOS animations
   once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
+  mirror: true, // whether elements should animate out while scrolling past them
+  anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });

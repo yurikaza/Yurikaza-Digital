@@ -8,16 +8,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.2/dist/locomotive-scroll.min.css"
+    href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
   />
     <link rel="stylesheet" href="/src/scss/style.css">
     <title>Yurikaza Agency</title>
     <link rel="shortcut icon" href="/src/img/Frame 1.png">
+    <style>
+        .viewport {
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+        }
+    
+        #smooth-scroll {
+          margin: 0 auto;
+        }
+        /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.432); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; 
+}
+      </style>
 </head>
 <body class="locomtaive-scroll-effects" data-scroll-container>
-    <header data-scroll-section>
+    <div class="viewport">
+        <div
+          data-scroll-settings="duration:1 ease:power2.out smoother:on"
+          id="smooth-scroll"
+        >
+    <header data-scroll-section data-aos="fade-up">
         <nav>
             <div class="left">
                 <img class="svg-logo" src="/src/img/logo.svg" alt="">
@@ -50,10 +89,10 @@
     </header>
     <main>
         <section id="category"  data-scroll-section>
-            <div class="headline" data-scroll data-scroll-speed="2">
+            <div class="headline" data-aos="fade-up" data-scroll data-scroll-speed="2">
                 <h1>Services</h1>
             </div>
-            <div class="container"  id="home" data-scroll>
+            <div class="container" data-aos="fade-up"  id="home" data-scroll>
                 <div class="main-text">
                     <div class="line-flex">
                     <div class="line line1 fade-in" data-scroll data-scroll-speed="5">
@@ -79,23 +118,23 @@
             </div>
         </section>
         <section id="about" data-scroll-section>
-            <div class="headline" >
+            <div class="headline" data-aos="fade-up">
                 <h1>ABOUT</h1>
             </div>
-            <div class="container"  data-scroll data-scroll-speed="1">
+            <div class="container" data-aos="fade-up"  data-scroll data-scroll-speed="1">
                 <p >We are Yurikaza Digital, a Sofware Agency Based in Turkey. Yurikaza digital was created in 2021 with 5 workers (Four in Turkey one in Pakistan) We focus on creating rich seamless experiences between the product and the user. We always pay attention to creativity and design on the projects.</p>
             </div>
         </section>
         <section  id="coreValues" data-scroll-section>
             <div class="container">
                 <div class="top">
-                    <div class="col-1">
+                    <div class="col-1" data-aos="fade-up">
                         <h1>Core Values We Live Like</h1>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2" data-aos="fade-up">
                         <p>Don't miss the news about company</p>
                        
-                        <form
+                        <form data-aos="fade-up"
                           action="https://formspree.io/f/mrgrdkzr"
                           method="POST">
                           <div class="btn">
@@ -105,13 +144,13 @@
                         </form>
                     </div>
                 </div>
-                <div class="middle">
-                    <div class="col-1">
+                <div class="middle" >
+                    <div class="col-1" data-aos="fade-up">
                         <i class="fas fa-ruler-vertical fa-2x"></i>
                         <h1>Design</h1>
                         <p>We really pay attention to the design part of websites. First, we make your website prototype with Figma or Adobe Xd and after that, we start coding.</p>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2" data-aos="fade-up">
                         <i class="fas fa-mobile-alt fa-2x"></i>
                         <h1>Resposive Design</h1>
                         <p>Did you know that 70% of people view websites from their Cell Phones? That makes responsive design be important. As a company, we really pay attention to that.</p>
@@ -119,12 +158,12 @@
                 </div>
                 <div class="bottom">
                
-                    <div class="col-1">
+                    <div class="col-1" data-aos="fade-up">
                         <i class="fab fa-uncharted fa-2x"></i>
                         <h1>The large pool of software tools.</h1>
                         <p>We can make your website with a lot of no Code technologies (Shopify, WordPress, Squarespace, Wix, Webflow) or special code. Every selection is will be a different advantage for you.</p>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2" data-aos="fade-up">
                         <i class="fas fa-shipping-fast fa-2x"></i>
                         <h1>Fast Delivery</h1>
                         <p>We can make your websites or design as much as fast we can with a huge team.</p>
@@ -134,13 +173,13 @@
         </section>
         
         <section id="swip" data-scroll-section>
-            <div class="headline" data-scroll data-scroll-speed="1">
+            <div class="headline" data-aos="fade-up" data-scroll data-scroll-speed="1">
                 <h1>TEAM</h1>
             </div>
             <div class="swiper mySwiper" data-scroll data-scroll-speed="1">
                 <div class="swiper-wrapper" >
                   <div class="swiper-slide" data-scroll>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up">
                         <div class="image" data-scroll data-scroll-speed="4"><img src="/src/img/yusuf.jpg" alt=""></div>
                         <div class="name" data-scroll data-scroll-speed="3">
                             <h4>Yusuf Mirza Pıçakcı</h5>
@@ -152,7 +191,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide" data-scroll>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up">
                         <div class="image" data-scroll data-scroll-speed="5"><img src="/src/img/ege.png" alt=""></div>
                         <div class="name" data-scroll data-scroll-speed="3">
                             <h4>Ege Dinnen</h5>
@@ -164,7 +203,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide" data-scroll>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up">
                         <div class="image" data-scroll data-scroll-speed="2"><img src="/src/img/IMG_20210724_212037.jpg" alt=""></div>
                         <div class="name" data-scroll data-scroll-speed="3">
                             <h4>Hakan Aygün</h5>
@@ -177,7 +216,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide" data-scroll>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up">
                         <div class="image" data-scroll data-scroll-speed="1"><img src="/src/img/de0099ef-d6a7-47f5-bfe4-bdbad5115030.jpg" alt=""></div>
                         <div class="name" data-scroll data-scroll-speed="3">
                             <h4>Huzaifa Sheikh</h5>
@@ -189,7 +228,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide" data-scroll>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up">
                         <div class="image" data-scroll data-scroll-speed="1"><img src="/src/img/apo.png" alt=""></div>
                         <div class="name" data-scroll data-scroll-speed="3">
                             <h4>Abdülsamet Yazıcı</h4>
@@ -206,12 +245,12 @@
         </section>
        
         <section id="portfolio" data-scroll-section>
-            <div class="headline" data-scroll >
+            <div class="headline" data-aos="fade-up" data-scroll >
                 <h1>PORTFOLIO</h1>
             </div>
              <div class="container" >
               
-                 <div class="col-2 col" data-scroll >
+                 <div class="col-2 col" data-aos="fade-up" data-scroll >
                      <div class="head">
                          <h1>Yurikaza News</h1>
                          <p>This is offically news website of Yurikaza Digital</p>
@@ -222,7 +261,7 @@
                         </a>
                      </div>
                  </div>
-                 <div class="col-3 col" data-scroll>
+                 <div class="col-3 col" data-aos="fade-up" data-scroll>
                      <div class="head">
                          <h1 data-scroll>Yusuf's Blog</h1>
                          <p data-scroll>This is Yusuf Mirza Pıçakcı (Ceo of Yurikaza Digital) Personal Blog Website</p>
@@ -233,7 +272,7 @@
                         </a>
                      </div>
                  </div>
-                 <div class="col-4 col" data-scroll >
+                 <div class="col-4 col" data-aos="fade-up" data-scroll >
                      <div data-scroll class="head">
                          <h1 data-scroll>Yurikaza E-commerce</h1>
                          <p data-scroll>This is a demo e-commerce website.</p>
@@ -247,7 +286,7 @@
              </div>
              <div class="container" data-scroll>
               
-                 <div class="col-2 col" data-scroll data-scroll-speed="1">
+                 <div class="col-2 col" data-aos="fade-up" data-scroll data-scroll-speed="1">
                      <div class="head">
                          <h1 data-scroll>Mavi Yapi</h1>
                          <p data-scroll>Mavi yapi is an interior design company base in Turkey
@@ -259,7 +298,7 @@
                         </a>
                      </div>
                  </div>
-                 <div class="col-3 col" data-scroll data-scroll-speed="1">
+                 <div class="col-3 col" data-aos="fade-up" data-scroll data-scroll-speed="1">
                      <div class="head" data-scroll>
                          <h1 data-scroll>Buisness Landing Page</h1>
                          <p data-scroll>This is a demo buisness landing page website</p>
@@ -270,7 +309,7 @@
                         </a>
                      </div>
                  </div>
-                 <div class="col-4 col" data-scroll>
+                 <div class="col-4 col" data-aos="fade-up" data-scroll>
                      <div class="head" data-scroll>
                          <h1 data-scroll>Crypto Price Tracer</h1>
                          <p data-scroll>This is a offical Yurikaza Digital crypto price tracer website</p>
@@ -284,13 +323,13 @@
              </div>
         </section>
         <section id="process" data-scroll-section>
-            <div class="headline" data-scroll data-scroll-speed="1">
+            <div class="headline" data-aos="fade-up" data-scroll data-scroll-speed="1">
                 <h1>Project Process</h1>
             </div>
             <div data-scroll class="container"data-scroll>
-                <div  data-scroll class="left" data-scroll data-scroll-speed="1"> 
+                <div  data-scroll class="left" data-aos="fade-up" data-scroll data-scroll-speed="1"> 
                     <h2 data-scroll>Web Site or Grafic Design Projects</h2>
-                    <ul>
+                    <ul data-aos="fade-up">
                         <li data-scroll>First You shold explain what you want with samples</li>
                         <li data-scroll>Team Meeting for project</li>
                         <li data-scroll>Design process in Figma</li>
@@ -300,8 +339,8 @@
                 </div>
                 <div  data-scroll class="middle" data-scroll data-scroll-speed="1"></div>
                 <div  data-scroll class="right" data-scroll data-scroll-speed="1"> 
-                    <h2 data-scroll >Grafic Design Projects</h2>
-                    <ul>
+                    <h2 data-aos="fade-up" data-scroll >Grafic Design Projects</h2>
+                    <ul data-aos="fade-up">
                         <li data-scroll >First You shold explain what you want with samples</li>
                         <li data-scroll >Team Meeting for project</li>
                         <li data-scroll >Design process in Adobe Programs</li>
@@ -310,11 +349,11 @@
                 </div>
             </div>
         </section>
-        <section id="faq" data-scroll-section>
+        <section id="faq" data-aos="fade-up" data-scroll-section>
             <div class="headline" data-scroll data-scroll-speed="3">
                 <h1 data-scroll>FAQ</h1>
             </div>
-            <div class="container" data-scroll data-scroll-speed="3"> 
+            <div class="container" data-aos="fade-up" data-scroll data-scroll-speed="3"> 
                 <div class="col-1" data-scroll>
                     <button class="accordion">Wich tool can use on Grafic Design Project</button>
                     <div class="panel">
@@ -341,10 +380,10 @@
     </main>
     <footer data-scroll-section>
         <section id="connactUs" data-scroll>
-            <div class="top" data-scroll data-scroll-speed="3">
+            <div class="top" data-aos="fade-up" data-scroll data-scroll-speed="3">
                 <img src="/src/img/Rectangle 14.png" alt="">
             </div>
-            <div class="middle">
+            <div class="middle" data-aos="fade-up">
                 <section id="scroll">
                     <div>
                       <section class="news-message">
@@ -366,7 +405,7 @@
                     </div>
                       </section>
             </div>
-            <div class="bottom" data-scroll data-scroll-speed="1">
+            <div class="bottom" data-aos="fade-up" data-scroll data-scroll-speed="1">
                     <div class="left">
                       
                         <div class="col-2">
@@ -424,7 +463,7 @@
                     </div>
             </div>
         </section>
-        <div class="footers" data-scroll>
+        <div class="footers" data-aos="fade-up" data-scroll>
             <div class="left" data-scroll>
                 <img data-scroll class="svg-logo" src="/src/img/logo.svg" alt="">
             </div>
@@ -433,11 +472,15 @@
             </div>
         </div>
     </footer>
-  
+</div>
+</div>
     <script src="https://kit.fontawesome.com/8b35fc7b96.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.2/dist/locomotive-scroll.min.js"></script>
     <!--<script src="/src/js/locomotive-scroll.min.js"></script>-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script type="module" src="/src/js/app.js" ></script>
 </body>
 </html>
